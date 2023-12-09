@@ -7,7 +7,6 @@ import (
 )
 
 func to_digit(c byte) int {
-	fmt.Printf("%c - %d\n", c, int(c-'0'))
 	return int(c - '0')
 }
 
@@ -32,7 +31,6 @@ func process_line(line []byte) (int, error) {
 			break
 		}
 	}
-	fmt.Printf("%s - %d%d\n", line, first, last)
 	return first*10 + last, nil
 }
 
